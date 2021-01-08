@@ -2,6 +2,7 @@
 *{	
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
+	width: 100%;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 .rightside {
 	display: flex;
 	justify-content: space-between;
-	width: 40%;
+	width: 100%;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -103,18 +104,17 @@ body {
 
 
 .social_media_list{
-	display: inline-flex;
-	position: absolute;
-	justify-content: space-between;
+	display: flex;
+	justify-content: center;
 	list-style: none;
+	justify-content: space-around;
+	width: 100%;
 	top: 90%;
-	left: 44%;
 	height:50px;
 }
 
 ion-icon {
   font-size: 40px;
-  margin-right: 10px;
   color: #EBEBEB;
 }
 
