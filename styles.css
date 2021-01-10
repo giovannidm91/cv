@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	font-size: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)), url("IMGS/BGs/home_bg.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.container{
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contacts-container{
+	max-width: 40rem;
+	width: 10%;
+	padding-top: 20vh;
+	margin: 0 auto;
+}
+
+.contacts-container ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+.contacts-container ul li{
+	list-style: none;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #eee;
+}
+
+ion-icon:hover {
+  color: crimson;
+  transition: 0.5s;
+}
+
+nav{
+	padding-top: 10rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.9rem;
+}
+
+.brand{
+	font-size: 3rem;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.brand span{
+	color: crimson;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 3px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+.crop_container{
+	max-width: 120rem;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+.cropper{
+	overflow: hidden;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 3px solid #eee;
+	align-items: center;
+}
+
+.profile_pic{
+	margin-left: -25%;
+	width: auto; 
+	height: 100%;
+}
